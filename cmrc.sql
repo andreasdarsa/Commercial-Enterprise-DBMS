@@ -103,9 +103,9 @@ CREATE INDEX IFK_Rel_04 ON Sale_to_customer (Customer_customer_id);
 CREATE INDEX IFK_Rel_05 ON Sale_to_customer (Employee_employee_id);
 
 INSERT INTO Employee(employee_id, first_name, last_name, city, region, postal_code, street_name, street_num, phone_num, tax_reg_num, identity_num) VALUES
-(1, 'John', 'Papadopoulos', 'Athens', 'Attica', 10558, 'Main St', 10, 2101234567, 123456789, 'ID12345'),
-(2, 'Maria', 'Papageorgiou', 'Thessaloniki', 'Central Macedonia', 54621, 'Second St', 20, 2310123456, 987654321, 'ID54321'),
-(3, 'Kostas', 'Nikolaou', 'Patras', 'Western Greece', 26221, 'Third St', 30, 2610123456, 192837465, 'ID67890');
+(1, 'Giannis', 'Papadopoulos', 'Athens', 'Attica', 10558, 'Filellinon St', 10, 2101234567, 123456789, 'ID12345'),
+(2, 'Maria', 'Papageorgiou', 'Thessaloniki', 'Central Macedonia', 54621, 'Angelaki St', 20, 2310123456, 987654321, 'ID54321'),
+(3, 'Kostas', 'Nikolaou', 'Patras', 'Western Greece', 26221, 'Agiou Andreou St', 30, 2610123456, 192837465, 'ID67890');
 
 INSERT INTO Product(prod_id, type_prod, purc_price, sale_price, brief_desc, ext_desc, amount) VALUES
 (1, 'Electronics', 80, 120, 'Smartphone', 'A high-end smartphone with a large display and powerful processor.', 50),
@@ -113,12 +113,12 @@ INSERT INTO Product(prod_id, type_prod, purc_price, sale_price, brief_desc, ext_
 (3, 'Electronics', 200, 300, 'Laptop', 'Lightweight laptop with long battery life and high performance.', 15);
 
 INSERT INTO Supplier(supplier_id, name, phone_num, city, region, street_name, street_num) VALUES
-(1, 'Tech Supplies Co.', 2109876543, 'Athens', 'Attica', 'Supplier St', 5),
-(2, 'Office Furnishings Ltd.', 2310987654, 'Thessaloniki', 'Central Macedonia', 'Furniture Ave', 15);
+(1, 'Tech Supplies Co.', 2109876543, 'Athens', 'Attica', 'Petrou Ralli St', 5),
+(2, 'Office Furnishings Ltd.', 2310987654, 'Thessaloniki', 'Central Macedonia', 'Monastiriou', 15);
 
 INSERT INTO Customer(customer_id, name, phone_num, city, region, postal_code, street_name, street_num) VALUES
-(1, 'Alice', 2105551234, 'Athens', 'Attica', 10558, 'Customer St', 12),
-(2, 'Bob', 2310554321, 'Thessaloniki', 'Central Macedonia', 54621, 'Buyer Ave', 22);
+(1, 'Anna', 2105551234, 'Athens', 'Attica', 10558, 'Lysikratous', 12),
+(2, 'Giorgos', 2310554321, 'Thessaloniki', 'Central Macedonia', 54621, 'Mitropoleos', 22);
 
 INSERT INTO Purchase_from_supplier(Product_prod_id, Supplier_supplier_id, amount, unit_price, total_cost) VALUES
 (1, 1, 50, 80, 4000),
