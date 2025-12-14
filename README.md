@@ -2,7 +2,7 @@
 An sqlite database system managing various aspects of a commercial enterprise, such as customers, suppliers, products, employees, purchases from suppliers and sales to customers.
 
 # Entity-Relationship Diagram
-https://github.com/andreasdarsa/Commercial-Enterprise-DBMS/blob/main/er_diagram_4403.jpg
+![er_diagram4403](https://github.com/user-attachments/assets/8bf37aed-22e8-4129-b947-9a42cebf2244)
 
 # Relationships explained
 - **Purchase_from_supplier**: This is an **N:M** relationship between **Supplier** and **Product**, considering a product could be bought from various suppliers and one supplier could supply various products to the company.
