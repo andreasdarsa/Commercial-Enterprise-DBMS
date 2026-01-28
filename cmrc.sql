@@ -17,7 +17,7 @@ CREATE TABLE Supplier (
   phone_num INTEGER    ,
   city VARCHAR(20)    ,
   region VARCHAR(20)    ,
-  street_name VARCHAR(20)    ,
+  street_name VARCHAR(20)   ,
   street_num INTEGER      ,
 PRIMARY KEY(supplier_id));
 

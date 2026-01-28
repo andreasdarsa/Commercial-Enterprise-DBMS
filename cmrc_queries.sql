@@ -40,3 +40,4 @@ JOIN Sale_to_customer ON Employee.employee_id = Sale_to_customer.Employee_employ
 GROUP BY Employee.employee_id, Employee.first_name, Employee.last_name
 ORDER BY COUNT(*) ASC
 LIMIT 1;
+
