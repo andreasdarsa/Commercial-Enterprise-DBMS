@@ -1,2 +1,2 @@
 *.db linguist-detectable=false
-*.db linguist-vendored=false
+*.db linguist-vendored
